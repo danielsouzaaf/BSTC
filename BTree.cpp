@@ -53,3 +53,35 @@ bool BTree<T,K>::btInsert(K key, btNode** leaf, T* data, bool uV) {
     return btInsert(key, &(*leaf)->right, data, uV);
 }
 
+template<typename T, typename K>
+T* BTree<T, K>::search(K key){
+    return btSearch(key, root);
+}
+template<typename T, typename K>
+T* BTree<T, K>::btSearch(K key, btNode* leaf) {
+    if(leaf) {
+        if(leaf->key == key) {
+            return (T*)leaf->data;
+        }
+        if (key < leaf->key) {
+            return btSearch(key, leaf->left);
+        } else {
+            return btSearch(key, leaf->right);
+        }
+    } else {
+        return NULL;
+    }
+}
+template<typename T, typename K>
+size_t BTree<T, K>::count() {
+    return btCount(root);
+}
+template<typename T, typename K>
+size_t BTree<T, K>::btCount(btNode* leaf) {
+    if (leaf) {
+        return 1 + btCount(leaf->left) + btCount(leaf->right);
+    }
+    return 0;
+}
+
+
