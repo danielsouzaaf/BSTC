@@ -1,0 +1,3 @@
+/home/zouza/Projects/BSTC/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/zouza/Projects/BSTC/cmake-build-debug/CMakeFiles/BSTC.dir
+/home/zouza/Projects/BSTC/cmake-build-debug/CMakeFiles/edit_cache.dir
