@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/zouza/Projects/BSTC/BSTNode.cpp" "/home/zouza/Projects/BSTC/cmake-build-debug/CMakeFiles/BSTC.dir/BSTNode.cpp.o"
-  "/home/zouza/Projects/BSTC/main.cpp" "/home/zouza/Projects/BSTC/cmake-build-debug/CMakeFiles/BSTC.dir/main.cpp.o"
+  "/home/daniel/Projects/BSTC/BTree.cpp" "/home/daniel/Projects/BSTC/cmake-build-debug/CMakeFiles/BSTC.dir/BTree.cpp.o"
+  "/home/daniel/Projects/BSTC/main.cpp" "/home/daniel/Projects/BSTC/cmake-build-debug/CMakeFiles/BSTC.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

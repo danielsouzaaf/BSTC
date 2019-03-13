@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/zouza/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/daniel/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/zouza/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/daniel/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zouza/Projects/BSTC
+CMAKE_SOURCE_DIR = /home/daniel/Projects/BSTC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zouza/Projects/BSTC/cmake-build-debug
+CMAKE_BINARY_DIR = /home/daniel/Projects/BSTC/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/zouza/Projects/BSTC/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/zouza/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/daniel/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/zouza/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/daniel/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zouza/Projects/BSTC/cmake-build-debug/CMakeFiles /home/zouza/Projects/BSTC/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniel/Projects/BSTC/cmake-build-debug/CMakeFiles /home/daniel/Projects/BSTC/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zouza/Projects/BSTC/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniel/Projects/BSTC/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,32 @@ BSTC/fast:
 	$(MAKE) -f CMakeFiles/BSTC.dir/build.make CMakeFiles/BSTC.dir/build
 .PHONY : BSTC/fast
 
-BSTNode.o: BSTNode.cpp.o
+BTree.o: BTree.cpp.o
 
-.PHONY : BSTNode.o
+.PHONY : BTree.o
 
 # target to build an object file
-BSTNode.cpp.o:
-	$(MAKE) -f CMakeFiles/BSTC.dir/build.make CMakeFiles/BSTC.dir/BSTNode.cpp.o
-.PHONY : BSTNode.cpp.o
+BTree.cpp.o:
+	$(MAKE) -f CMakeFiles/BSTC.dir/build.make CMakeFiles/BSTC.dir/BTree.cpp.o
+.PHONY : BTree.cpp.o
 
-BSTNode.i: BSTNode.cpp.i
+BTree.i: BTree.cpp.i
 
-.PHONY : BSTNode.i
+.PHONY : BTree.i
 
 # target to preprocess a source file
-BSTNode.cpp.i:
-	$(MAKE) -f CMakeFiles/BSTC.dir/build.make CMakeFiles/BSTC.dir/BSTNode.cpp.i
-.PHONY : BSTNode.cpp.i
+BTree.cpp.i:
+	$(MAKE) -f CMakeFiles/BSTC.dir/build.make CMakeFiles/BSTC.dir/BTree.cpp.i
+.PHONY : BTree.cpp.i
 
-BSTNode.s: BSTNode.cpp.s
+BTree.s: BTree.cpp.s
 
-.PHONY : BSTNode.s
+.PHONY : BTree.s
 
 # target to generate assembly for a file
-BSTNode.cpp.s:
-	$(MAKE) -f CMakeFiles/BSTC.dir/build.make CMakeFiles/BSTC.dir/BSTNode.cpp.s
-.PHONY : BSTNode.cpp.s
+BTree.cpp.s:
+	$(MAKE) -f CMakeFiles/BSTC.dir/build.make CMakeFiles/BSTC.dir/BTree.cpp.s
+.PHONY : BTree.cpp.s
 
 main.o: main.cpp.o
 
@@ -186,9 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... BSTC"
 	@echo "... edit_cache"
-	@echo "... BSTNode.o"
-	@echo "... BSTNode.i"
-	@echo "... BSTNode.s"
+	@echo "... BTree.o"
+	@echo "... BTree.i"
+	@echo "... BTree.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

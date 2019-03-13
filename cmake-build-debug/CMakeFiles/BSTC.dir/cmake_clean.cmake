@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/BSTC.dir/main.cpp.o"
-  "CMakeFiles/BSTC.dir/BSTNode.cpp.o"
+  "CMakeFiles/BSTC.dir/BTree.cpp.o"
   "BSTC.pdb"
   "BSTC"
 )

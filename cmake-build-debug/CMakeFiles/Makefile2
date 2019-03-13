@@ -50,19 +50,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/zouza/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/daniel/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/zouza/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/daniel/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zouza/Projects/BSTC
+CMAKE_SOURCE_DIR = /home/daniel/Projects/BSTC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zouza/Projects/BSTC/cmake-build-debug
+CMAKE_BINARY_DIR = /home/daniel/Projects/BSTC/cmake-build-debug
 
 #=============================================================================
 # Target rules for target CMakeFiles/BSTC.dir
@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /home/zouza/Projects/BSTC/cmake-build-debug
 CMakeFiles/BSTC.dir/all:
 	$(MAKE) -f CMakeFiles/BSTC.dir/build.make CMakeFiles/BSTC.dir/depend
 	$(MAKE) -f CMakeFiles/BSTC.dir/build.make CMakeFiles/BSTC.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zouza/Projects/BSTC/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target BSTC"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/daniel/Projects/BSTC/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target BSTC"
 .PHONY : CMakeFiles/BSTC.dir/all
 
 # Include target in all.
@@ -81,9 +81,9 @@ all: CMakeFiles/BSTC.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/BSTC.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zouza/Projects/BSTC/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniel/Projects/BSTC/cmake-build-debug/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/BSTC.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zouza/Projects/BSTC/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniel/Projects/BSTC/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/BSTC.dir/rule
 
 # Convenience name for target.

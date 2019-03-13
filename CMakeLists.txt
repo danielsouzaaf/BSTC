@@ -3,4 +3,4 @@ project(BSTC)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(BSTC main.cpp BSTNode.cpp BSTNode.h)
+add_executable(BSTC main.cpp BTree.cpp BTree.h)

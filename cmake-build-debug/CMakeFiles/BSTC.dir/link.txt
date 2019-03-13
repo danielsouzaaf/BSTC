@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/BSTC.dir/main.cpp.o CMakeFiles/BSTC.dir/BSTNode.cpp.o  -o BSTC 
+/usr/bin/c++  -g   CMakeFiles/BSTC.dir/main.cpp.o CMakeFiles/BSTC.dir/BTree.cpp.o  -o BSTC 
