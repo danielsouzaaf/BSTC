@@ -20,6 +20,7 @@ public:
     T* search(K);
     void iterate(BTIter);
     bool isBalanced();
+    void balanceTree();
 private:
     struct btNode {
         K key;
@@ -40,6 +41,10 @@ private:
     void rightRotate(btNode**);
     void treeToVine(btNode**);
     void leftRotate(btNode**);
+    void vineToTree(btNode**);
+    void compress(btNode**, int);
+    void rotateOrCompress(btNode**, int);
+    void dswTreeBalance(btNode**);
 };
 
 
