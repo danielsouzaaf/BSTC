@@ -11,7 +11,7 @@
 template<typename T, typename K>
 class BTree {
 public:
-    using BTIter = void(*)(K, T*);
+    using BTIter = bool(*)(K, T*);
     BTree();
     ~BTree();
     bool insert(K, T*, bool=false);
@@ -36,6 +36,7 @@ private:
     size_t btMax(size_t, size_t);
     T* btSearch(K, btNode*);
     void btIterate(btNode*, BTIter);
+    bool btRepeat; //usado pelo btIterate
 };
 
 

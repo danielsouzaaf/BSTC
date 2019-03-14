@@ -98,5 +98,33 @@ template<typename T, typename K>
 size_t BTree<T,K>::btMax(size_t a, size_t b) {
     return (a <= b)?b:a;
 }
+template<typename T, typename K>
+bool BTree<T,K>::isBalanced() {
+    return btHeight(root) <= (int)log2(btCount(root)) + 1;
+}
+template<typename T, typename K>
+void BTree<T,K>::btDelete(btNode* leaf) {
+    if(leaf) {
+        btDelete(leaf->left);
+        btDelete(leaf->right);
+        free(leaf->data);
+        free(leaf);
+    }
+}
+template<typename T, typename K>
+void BTree<T,K>::iterate(BTIter callback) {
+    btRepeat = true;
+    btIterate(root, callback);
+}
+template<typename T, typename K>
+void BTree<T,K>::btIterate(btNode* leaf, BTIter callback) {
+    if(leaf && btRepeat) {
+        btIterate(leaf->left, callback);
+        if(btRepeat) {
+            callback(leaf->key, (T *) leaf->data);
+            btIterate(leaf->right, callback);
+        }
+    }
+}
 
 
