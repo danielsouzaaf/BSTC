@@ -17,7 +17,7 @@ BTree<T,K>::~BTree() {
 }
 
 template<typename T, typename K>
-bool BTree<T,K>::insert(K key, T* data, bool updateValue = false) {
+bool BTree<T,K>::insert(K key, T* data, bool updateValue) {
     return btInsert(key, &root, data, updateValue);
 }
 

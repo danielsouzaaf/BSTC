@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/daniel/Projects/BSTC/BTree.h
+clocale
+-
+cstddef
+-
+
+/home/daniel/Projects/BSTC/main.cpp
+iostream
+-
+BTree.h
+/home/daniel/Projects/BSTC/BTree.h
+
