@@ -83,5 +83,20 @@ size_t BTree<T, K>::btCount(btNode* leaf) {
     }
     return 0;
 }
+template<typename T, typename K>
+size_t BTree<T,K>::height() {
+    return btHeight(root);
+}
+template<typename T, typename K>
+size_t BTree<T,K>::btHeight(btNode* leaf) {
+    if (leaf) {
+        return 1 + btMax(btHeight(leaf->left), btHeight(leaf->right));
+    }
+    return 0;
+}
+template<typename T, typename K>
+size_t BTree<T,K>::btMax(size_t a, size_t b) {
+    return (a <= b)?b:a;
+}
 
 
