@@ -37,6 +37,9 @@ private:
     T* btSearch(K, btNode*);
     void btIterate(btNode*, BTIter);
     bool btRepeat; //usado pelo btIterate
+    void rightRotate(btNode**);
+    void treeToVine(btNode**);
+    void leftRotate(btNode**);
 };
 
 

@@ -126,5 +126,38 @@ void BTree<T,K>::btIterate(btNode* leaf, BTIter callback) {
         }
     }
 }
+template<typename T, typename K>
+void BTree<T,K>::rightRotate(btNode** root) {
+    btNode *oldLeft, *oldLeftRight;
+    oldLeft = (*root)->left;
+    oldLeftRight = oldLeft->right;
+    oldLeft->right = *root;
+    oldLeft->right->left = oldLeftRight;
+    *root = oldLeft;
+};
+template<typename T, typename K>
+void BTree<T,K>::treeToVine(btNode** tree) {
+    btNode* root = tree;
+    if(!root) {
+        return;
+    }
+    while(root->left) {
+        rightRotate(&root);
+    }
+    if(root->right){
+        treeToVine(&(root->right));
+    }
+    *tree = root;
+}
+template<typename T, typename K>
+void BTree<T,K>::leftRotate(btNode** root) {
+    btNode *oldRight, *oldRightLeft;
+    oldRight = (*root)->right;
+    oldRightLeft = oldRight->left;
+    oldRight->left = *root;
+    oldRight->left->right = oldRightLeft;
+    *root = oldRight;
+};
+
 
 
